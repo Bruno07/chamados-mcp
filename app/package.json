@@ -1,0 +1,24 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file .env src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@langchain/core": "^1.2.18",
+    "@langchain/mcp-adapters": "^2.0.1",
+    "@langchain/openai": "^1.6.2",
+    "fastify": "^5.12.7",
+    "langchain": "^1.5.18"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5"
+  }
+}

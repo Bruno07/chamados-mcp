@@ -1,0 +1,22 @@
+[
+    {
+        "id": "financeiro",
+        "nome": "Financeiro"
+    },
+    {
+        "id": "infraestrutura_ti",
+        "nome": "TI"
+    },
+    {
+        "id": "recurso_humanos",
+        "nome": "Recursos Humanos"
+    },
+    {
+        "id": "suporte",
+        "nome": "Suporte"
+    },
+    {
+        "id": "vendas",
+        "nome": "Vendas"
+    }
+]

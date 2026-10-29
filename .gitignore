@@ -1,0 +1,5 @@
+app/.env
+
+api/node_modules
+app/node_modules
+mcp/node_modules

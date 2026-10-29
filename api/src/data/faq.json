@@ -1,0 +1,502 @@
+[
+  {
+    "id": "FIN-001",
+    "categoria": "financeiro",
+    "titulo": "Segunda via de boleto",
+    "pergunta": "Como emitir a segunda via do meu boleto bancário?",
+    "resposta_padrao": "A segunda via pode ser gerada diretamente no portal do cliente na aba Faturamento.",
+    "precisa_abertura": false,
+    "palavras_chave": ["boleto", "segunda via", "faturamento", "pagamento"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "FIN-002",
+    "categoria": "financeiro",
+    "titulo": "Alteração de dados cadastrais na nota fiscal",
+    "pergunta": "Preciso alterar o CNPJ/CPF na nota fiscal emitida neste mês.",
+    "resposta_padrao": "Alterações de dados fiscais após a emissão exigem análise e refaturamento pela equipe financeira.",
+    "precisa_abertura": true,
+    "palavras_chave": ["nota fiscal", "cnpj", "cpf", "refaturamento", "dados fiscais"],
+    "campos_necessarios": ["numero_nota", "cnpj_antigo", "cnpj_novo", "motivo_alteracao"]
+  },
+  {
+    "id": "FIN-003",
+    "categoria": "financeiro",
+    "titulo": "Consulta de pendências de pagamento",
+    "pergunta": "Quais faturas estão pendentes em minha conta?",
+    "resposta_padrao": "Consulte o histórico financeiro no painel do usuário ou verifique os e-mails informativos semanais.",
+    "precisa_abertura": false,
+    "palavras_chave": ["faturas", "pendencias", "debito", "extrato"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "FIN-004",
+    "categoria": "financeiro",
+    "titulo": "Solicitação de reembolso por pagamento em duplicidade",
+    "pergunta": "Paguei o mesmo boleto duas vezes por engano. Como recebo o dinheiro de volta?",
+    "resposta_padrao": "É necessário abrir uma solicitação de estorno anexando comprovantes das duas transações.",
+    "precisa_abertura": true,
+    "palavras_chave": ["reembolso", "estorno", "duplicidade", "comprovante"],
+    "campos_necessarios": ["valor_pago", "data_pagamento", "comprovante_1_url", "comprovante_2_url", "chave_pix"]
+  },
+  {
+    "id": "FIN-005",
+    "categoria": "financeiro",
+    "titulo": "Alteração de forma de pagamento recorrente",
+    "pergunta": "Como mudo o pagamento de boleto para cartão de crédito?",
+    "resposta_padrao": "Acesse Configurações de Conta > Métodos de Pagamento e adicione o novo cartão.",
+    "precisa_abertura": false,
+    "palavras_chave": ["cartao de credito", "forma de pagamento", "recorrencia"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "FIN-006",
+    "categoria": "financeiro",
+    "titulo": "Parcelamento de débitos em atraso",
+    "pergunta": "Tenho parcelas em atraso e quero negociar um parcelamento.",
+    "resposta_padrao": "Negociações de débitos requerem avaliação da equipe de cobrança para definição de juros e parcelas.",
+    "precisa_abertura": true,
+    "palavras_chave": ["negociacao", "parcelamento", "atraso", "cobrança"],
+    "campos_necessarios": ["numero_contrato", "proposta_parcelas", "telefone_contato"]
+  },
+  {
+    "id": "FIN-007",
+    "categoria": "financeiro",
+    "titulo": "Comprovante de rendimentos para IR",
+    "pergunta": "Onde baixo o informe de rendimentos anual?",
+    "resposta_padrao": "O informe fica disponível no menu Financeiro > Informes anuais a partir do mês de fevereiro.",
+    "precisa_abertura": false,
+    "palavras_chave": ["imposto de renda", "ir", "informe de rendimentos"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "FIN-008",
+    "categoria": "financeiro",
+    "titulo": "Isenção ou contestação de taxa de manutenção",
+    "pergunta": "Fui cobrado por uma taxa indevida no meu extrato.",
+    "resposta_padrao": "Solicitações de contestação de cobrança são analisadas individualmente pela auditoria interna.",
+    "precisa_abertura": true,
+    "palavras_chave": ["taxa indevida", "contestação", "cobrança indevida"],
+    "campos_necessarios": ["identificador_lancamento", "valor_contestado", "descricao_motivo"]
+  },
+  {
+    "id": "FIN-009",
+    "categoria": "financeiro",
+    "titulo": "Comprovante de quitação anual",
+    "pergunta": "Como obtenho a declaração de quitação anual de débitos?",
+    "resposta_padrao": "Disponível para download automático na aba Financeiro > Declarações para clientes adimplentes.",
+    "precisa_abertura": false,
+    "palavras_chave": ["quitacao", "declaracao", "adimplente"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "FIN-010",
+    "categoria": "financeiro",
+    "titulo": "Envio de comprovante de pagamento para baixa rápida",
+    "pergunta": "Já paguei o boleto mas meu sinal/acesso continua bloqueado.",
+    "resposta_padrao": "Envie o comprovante para antecipar a baixa manual do bloqueio no sistema.",
+    "precisa_abertura": true,
+    "palavras_chave": ["baixa manual", "desbloqueio", "comprovante pago"],
+    "campos_necessarios": ["codigo_autenticacao", "data_pagamento", "anexo_comprovante_url"]
+  },
+  {
+    "id": "VEN-001",
+    "categoria": "vendas",
+    "titulo": "Preços e planos disponíveis",
+    "pergunta": "Quais são os planos e preços para contratação?",
+    "resposta_padrao": "Você pode consultar todos os planos e recursos disponíveis em nossa página pública de preços.",
+    "precisa_abertura": false,
+    "palavras_chave": ["planos", "preços", "valores", "assinatura"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "VEN-002",
+    "categoria": "vendas",
+    "titulo": "Proposta personalizada para Grandes Empresas (Enterprise)",
+    "pergunta": "Quero cotar um plano customizado para mais de 500 licenças.",
+    "resposta_padrao": "Cotções volumétricas e SLA dedicado são negociados diretamente com um executivo de contas.",
+    "precisa_abertura": true,
+    "palavras_chave": ["enterprise", "licencas", "cotacao", "personalizado"],
+    "campos_necessarios": ["quantidade_usuarios", "nome_empresa", "cargo", "telefone_comercial"]
+  },
+  {
+    "id": "VEN-003",
+    "categoria": "vendas",
+    "titulo": "Período de testes gratuito (Trial)",
+    "pergunta": "Como funciona o trial de 14 dias?",
+    "resposta_padrao": "Basta cadastrar seu e-mail corporativo no site. Não é necessário cartão de crédito para testar.",
+    "precisa_abertura": false,
+    "palavras_chave": ["trial", "teste gratis", "degustacao"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "VEN-004",
+    "categoria": "vendas",
+    "titulo": "Agendamento de demonstração guiada",
+    "pergunta": "Gostaria de agendar uma reunião para ver o produto funcionando.",
+    "resposta_padrao": "Nossa equipe de pré-vendas entrará em contato para agendar uma demonstração adaptada ao seu negócio.",
+    "precisa_abertura": true,
+    "palavras_chave": ["demonstracao", "demo", "reuniao", "apresentacao"],
+    "campos_necessarios": ["horario_preferencial", "segmento_empresa", "principais_desafios"]
+  },
+  {
+    "id": "VEN-005",
+    "categoria": "vendas",
+    "titulo": "Desconto para ONGs e Instituições de Ensino",
+    "pergunta": "A empresa oferece condições especiais para instituições sem fins lucrativos?",
+    "resposta_padrao": "Sim, oferecemos 30% de desconto mediante validação documental da instituição.",
+    "precisa_abertura": true,
+    "palavras_chave": ["ong", "educacional", "desconto", "terceiro setor"],
+    "campos_necessarios": ["cnpj_instituicao", "comprovante_status_ong", "estimativa_contas"]
+  },
+  {
+    "id": "VEN-006",
+    "categoria": "vendas",
+    "titulo": "Formas de pagamento aceitas na contratação",
+    "pergunta": "Quais bandeiras de cartão e formas de pagamento vocês aceitam?",
+    "resposta_padrao": "Aceitamos Cartões de Crédito (Visa, Master, Amex), Pix e Boleto bancário anual.",
+    "precisa_abertura": false,
+    "palavras_chave": ["bandeiras", "pix", "forma de pagamento"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "VEN-007",
+    "categoria": "vendas",
+    "titulo": "Upgrade de plano intermediário",
+    "pergunta": "Como mudo do plano Básico para o Pro?",
+    "resposta_padrao": "O upgrade pode ser feito instantaneamente no painel em Configurações > Planos.",
+    "precisa_abertura": false,
+    "palavras_chave": ["upgrade", "mudar plano", "mudar de nivel"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "VEN-008",
+    "categoria": "vendas",
+    "titulo": "Contratação via Faturamento via Empenho (Público)",
+    "pergunta": "Somos um órgão público e precisamos comprar via Nota de Empenho.",
+    "resposta_padrao": "Processos licitatórios e compras governamentais são conduzidos pelo setor de licitações.",
+    "precisa_abertura": true,
+    "palavras_chave": ["empenho", "orgao publico", "licitacao"],
+    "campos_necessarios": ["orgao_comprador", "numero_processo", "termo_referencia_url"]
+  },
+  {
+    "id": "VEN-009",
+    "categoria": "vendas",
+    "titulo": "Programa de Parcerias e Revenda",
+    "pergunta": "Quero ser um parceiro comercial ou revendedor da solução.",
+    "resposta_padrao": "Inscrições para o programa de parceiros devem ser submetidas para homologação da equipe de canais.",
+    "precisa_abertura": true,
+    "palavras_chave": ["parceiro", "revenda", "comissao", "afiliado"],
+    "campos_necessarios": ["site_empresa", "atracao_clientes_estimada", "regiao_atuacao"]
+  },
+  {
+    "id": "VEN-010",
+    "categoria": "vendas",
+    "titulo": "Cancelamento antes do término do contrato",
+    "pergunta": "O que acontece se eu cancelar antes do prazo de fidelidade?",
+    "resposta_padrao": "Consulte os Termos de Uso do seu contrato para verificar a incidência de multa rescisória proporcional.",
+    "precisa_abertura": false,
+    "palavras_chave": ["fidelidade", "multa", "cancelamento precoce"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-001",
+    "categoria": "suporte",
+    "titulo": "Redefinição de senha de acesso",
+    "pergunta": "Esqueci minha senha e não consigo entrar na plataforma.",
+    "resposta_padrao": "Clique em 'Esqueci minha senha' na tela de login para receber o e-mail de redefinição.",
+    "precisa_abertura": false,
+    "palavras_chave": ["senha", "login", "acesso", "reset"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-002",
+    "categoria": "suporte",
+    "titulo": "Erro 500 interno ao carregar relatórios",
+    "pergunta": "A tela de relatórios exibe 'Erro Interno 500' desde hoje cedo.",
+    "resposta_padrao": "Falhas no processamento de relatórios demandam análise dos logs pela equipe de engenharia.",
+    "precisa_abertura": true,
+    "palavras_chave": ["erro 500", "bug", "falha", "relatorio"],
+    "campos_necessarios": ["navegador", "horario_ocorrencia", "passos_para_reproduzir", "print_erro_url"]
+  },
+  {
+    "id": "SUP-003",
+    "categoria": "suporte",
+    "titulo": "Requisitos mínimos de navegador",
+    "pergunta": "Quais navegadores são suportados pela plataforma?",
+    "resposta_padrao": "Suportamos as últimas versões do Google Chrome, Mozilla Firefox, Microsoft Edge e Safari.",
+    "precisa_abertura": false,
+    "palavras_chave": ["navegador", "browser", "requisitos", "compatibilidade"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-004",
+    "categoria": "suporte",
+    "titulo": "Lentidão generalizada no sistema",
+    "pergunta": "O sistema está extremamente lento para salvar registros nesta tarde.",
+    "resposta_padrao": "Iremos verificar a latência da sua instância e investigar eventuais gargalos na infraestrutura.",
+    "precisa_abertura": true,
+    "palavras_chave": ["lentidao", "travando", "performance", "demora"],
+    "campos_necessarios": ["ip_usuario", "módulo_afetado", "velocidade_conexao"]
+  },
+  {
+    "id": "SUP-005",
+    "categoria": "suporte",
+    "titulo": "Limpeza de cache do aplicativo",
+    "pergunta": "A tela está desconfigurada ou não atualiza as informações.",
+    "resposta_padrao": "Limpe o cache do seu navegador (Ctrl + Shift + R ou Cmd + Shift + R) e tente novamente.",
+    "precisa_abertura": false,
+    "palavras_chave": ["cache", "atualizacao", "desconfigurado"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-006",
+    "categoria": "suporte",
+    "titulo": "Falha na integração via Webhook",
+    "pergunta": "Meus webhooks pararam de receber os disparos do evento 'pedido_criado'.",
+    "resposta_padrao": "Casos de falha na entrega de eventos requerem auditoria na fila de mensagens do webhook.",
+    "precisa_abertura": true,
+    "palavras_chave": ["webhook", "integracao", "eventos", "payload"],
+    "campos_necessarios": ["endpoint_destino", "payload_exemplo", "log_retorno_http"]
+  },
+  {
+    "id": "SUP-007",
+    "categoria": "suporte",
+    "titulo": "Configuração de Autenticação em Duas Etapas (2FA)",
+    "pergunta": "Como ativo a verificação em duas etapas no meu perfil?",
+    "resposta_padrao": "Vá em Meu Perfil > Segurança > Autenticação em Duas Etapas e escaneie o código QR.",
+    "precisa_abertura": false,
+    "palavras_chave": ["2fa", "seguranca", "qr code", "autenticador"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-008",
+    "categoria": "suporte",
+    "titulo": "Perda de acesso ao autenticador 2FA",
+    "pergunta": "Troquei de celular e perdi o acesso ao meu aplicativo autenticador.",
+    "resposta_padrao": "A remoção manual de 2FA requer validação rigorosa de identidade pela equipe de segurança.",
+    "precisa_abertura": true,
+    "palavras_chave": ["perda 2fa", "troca celular", "desativar 2fa"],
+    "campos_necessarios": ["documento_identidade_url", "email_cadastrado", "ultimo_ip_acesso"]
+  },
+  {
+    "id": "SUP-009",
+    "categoria": "suporte",
+    "titulo": "Exportação de dados em lote",
+    "pergunta": "Como exporto todos os meus registros para um arquivo CSV?",
+    "resposta_padrao": "Acesse a opção Configurações > Dados > Exportar Tudo e aguarde o e-mail com o link de download.",
+    "precisa_abertura": false,
+    "palavras_chave": ["exportar", "csv", "backup dados"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "SUP-010",
+    "categoria": "suporte",
+    "titulo": "Restauração de dados apagados acidentalmente",
+    "pergunta": "Um usuário excluiu uma pasta importante por engano há 2 horas.",
+    "resposta_padrao": "Solicitações de restauração a partir do backup precisam ser executadas pelos administradores de BD.",
+    "precisa_abertura": true,
+    "palavras_chave": ["restauracao", "backup", "deletado", "excluido"],
+    "campos_necessarios": ["nome_recurso_deletado", "data_hora_aproximada_exclusao", "id_usuario_excluiu"]
+  },
+  {
+    "id": "RH-001",
+    "categoria": "recursos_humanos",
+    "titulo": "Consulta de dias de férias disponíveis",
+    "pergunta": "Onde vejo quantos dias de férias tenho acumulados?",
+    "resposta_padrao": "Acesse o Portal do Colaborador > Aba Meu Histórico > Saldo de Férias.",
+    "precisa_abertura": false,
+    "palavras_chave": ["ferias", "saldo", "dias acumulados"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "RH-002",
+    "categoria": "recursos_humanos",
+    "titulo": "Solicitação de agendamento de férias",
+    "pergunta": "Quero marcar minhas férias para o mês que vem.",
+    "resposta_padrao": "O agendamento formal de férias exige validação da gestão e aprovação do departamento de pessoal.",
+    "precisa_abertura": true,
+    "palavras_chave": ["marcar ferias", "solicitar ferias", "agendamento"],
+    "campos_necessarios": ["data_inicio", "quantidade_dias", "vender_dez_dias", "matricula_colaborador"]
+  },
+  {
+    "id": "RH-003",
+    "categoria": "recursos_humanos",
+    "titulo": "Data de pagamento de salário e benefícios",
+    "pergunta": "Qual o dia exato do pagamento do salário e do vale-refeição?",
+    "resposta_padrao": "O salário é pago no 5º dia útil e o vale-refeição/alimentação no dia 1º de cada mês.",
+    "precisa_abertura": false,
+    "palavras_chave": ["salario", "dia do pagamento", "vr", "va"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "RH-004",
+    "categoria": "recursos_humanos",
+    "titulo": "Envio de atestado médico",
+    "pergunta": "Preciso enviar um atestado médico referente ao meu afastamento de hoje.",
+    "resposta_padrao": "Atestados devem ser homologados pelo RH no prazo máximo de 48 horas após a emissão.",
+    "precisa_abertura": true,
+    "palavras_chave": ["atestado", "medico", "falta", "afastamento"],
+    "campos_necessarios": ["dias_afastamento", "crm_medico", "imagem_atestado_url", "data_emissao"]
+  },
+  {
+    "id": "RH-005",
+    "categoria": "recursos_humanos",
+    "titulo": "Inclusão de dependentes no plano de saúde",
+    "pergunta": "Como incluo meu filho recém-nascido no plano de saúde?",
+    "resposta_padrao": "Inclusão de dependentes requer envio de documentos para movimentação do plano de saúde.",
+    "precisa_abertura": true,
+    "palavras_chave": ["dependente", "plano de saude", "recem nascido", "inclusao"],
+    "campos_necessarios": ["nome_dependente", "cpf_dependente", "certidao_nascimento_url", "parentesco"]
+  },
+  {
+    "id": "RH-006",
+    "categoria": "recursos_humanos",
+    "titulo": "Acesso aos holerites/contracheques",
+    "pergunta": "Onde consigo baixar o meu holerite do mês passado?",
+    "resposta_padrao": "No Portal do Colaborador, menu Documentos > Holerites, selecione o ano e o mês desejado.",
+    "precisa_abertura": false,
+    "palavras_chave": ["holerite", "contracheque", "comprovante renda"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "RH-007",
+    "categoria": "recursos_humanos",
+    "titulo": "Atualização de endereço residencial no cadastro",
+    "pergunta": "Mudei de endereço e preciso atualizar meu cadastro e o vale-transporte.",
+    "resposta_padrao": "Mudanças de endereço afetam o cálculo de vale-transporte e requerem comprovante atualizado.",
+    "precisa_abertura": true,
+    "palavras_chave": ["mudanca endereco", "comprovante residencia", "atualizar cadastro"],
+    "campos_necessarios": ["novo_cep", "logradouro", "numero", "comprovante_residencia_url"]
+  },
+  {
+    "id": "RH-008",
+    "categoria": "recursos_humanos",
+    "titulo": "Política de reembolso de cursos e certificações",
+    "pergunta": "A empresa paga por certificações técnicas?",
+    "resposta_padrao": "Sim, cobrimos até 80% do valor mediante prévia aprovação da liderança no Plano de Desenvolvimento.",
+    "precisa_abertura": false,
+    "palavras_chave": ["curso", "certificacao", "politica reembolso", "estudos"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "RH-009",
+    "categoria": "recursos_humanos",
+    "titulo": "Solicitação de Reembolso de Certificação Aprovada",
+    "pergunta": "Passei na prova de certificação e quero solicitar o reembolso aprovado.",
+    "resposta_padrao": "Abra um chamado com a nota fiscal e o certificado de aprovação para processamento do reembolso.",
+    "precisa_abertura": true,
+    "palavras_chave": ["reembolso curso", "certificado aprovado", "nota fiscal curso"],
+    "campos_necessarios": ["nome_certificacao", "valor_pago", "comprovante_aprovacao_url", "nota_fiscal_url"]
+  },
+  {
+    "id": "RH-010",
+    "categoria": "recursos_humanos",
+    "titulo": "Regras de utilização do Banco de Horas",
+    "pergunta": "Como posso folgar usando minhas horas acumuladas no banco?",
+    "resposta_padrao": "As folgas do banco de horas devem ser combinadas diretamente com seu gestor imediato.",
+    "precisa_abertura": false,
+    "palavras_chave": ["banco de horas", "folga", "horas extras"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "TI-001",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Acesso à rede Wi-Fi de Visitantes",
+    "pergunta": "Qual a senha do Wi-Fi para visitantes na sede?",
+    "resposta_padrao": "Conecte-se à rede 'Visitantes-Corp' e faça o auto-cadastro com seu CPF e celular.",
+    "precisa_abertura": false,
+    "palavras_chave": ["wifi", "visitantes", "internet", "senha wifi"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "TI-002",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Solicitação de novo equipamento (Notebook)",
+    "pergunta": "Preciso solicitar um novo notebook para um funcionário recém-contratado.",
+    "resposta_padrao": "A compra ou alocação de hardware exige aprovação de orçamento do centro de custo.",
+    "precisa_abertura": true,
+    "palavras_chave": ["notebook", "hardware", "novo computador", "equipamento"],
+    "campos_necessarios": ["centro_custo", "cargo_usuario", "perfil_maquina", "data_necessidade"]
+  },
+  {
+    "id": "TI-003",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Instruções para conexão com VPN Corporativa",
+    "pergunta": "Como me conecto à VPN para trabalhar de casa?",
+    "resposta_padrao": "Siga o manual de instalação do cliente VPN disponível na Wiki interna de TI.",
+    "precisa_abertura": false,
+    "palavras_chave": ["vpn", "home office", "acesso remoto"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "TI-004",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Liberar acesso VPN para novo usuário",
+    "pergunta": "Minha conta não tem permissão para conectar na VPN corporativa.",
+    "resposta_padrao": "Liberar acessos à rede interna requer autorização expressa do gestor da área.",
+    "precisa_abertura": true,
+    "palavras_chave": ["liberar vpn", "permissao vpn", "acesso bloqueado vpn"],
+    "campos_necessarios": ["email_usuario", "gestor_aprovador_email", "justificativa_negocio"]
+  },
+  {
+    "id": "TI-005",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Troca de toner ou suprimentos da impressora",
+    "pergunta": "A impressora do 2º andar está sem toner.",
+    "resposta_padrao": "A substituição de suprimentos é realizada pela equipe de infraestrutura mediante chamado.",
+    "precisa_abertura": true,
+    "palavras_chave": ["impressora", "toner", "papel", "suprimentos"],
+    "campos_necessarios": ["localizacao_impressora", "modelo_impressora", "cor_toner"]
+  },
+  {
+    "id": "TI-006",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Política de segurança para uso de dispositivos USB",
+    "pergunta": "Posso usar um pendrive pessoal no computador da empresa?",
+    "resposta_padrao": "Por políticas de segurança cibernética, a leitura/escrita em mídias removíveis é bloqueada.",
+    "precisa_abertura": false,
+    "palavras_chave": ["usb", "pendrive", "bloqueio usb", "seguranca"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "TI-007",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Exceção de segurança: Liberação temporária de porta USB",
+    "pergunta": "Preciso extrair dados de um equipamento homologado via USB.",
+    "resposta_padrao": "Liberações excepcionais de portas USB exigem aprovação do CISO e varredura prévia.",
+    "precisa_abertura": true,
+    "palavras_chave": ["excecao usb", "liberar pendrive", "autorizacao ciso"],
+    "campos_necessarios": ["patrimonio_computador", "duracao_liberacao_horas", "justificativa_seguranca"]
+  },
+  {
+    "id": "TI-008",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Solicitação de licença de Software (Ex: Figma, JetBrains)",
+    "pergunta": "Preciso de uma licença do aplicativo X para trabalhar no meu projeto.",
+    "resposta_padrao": "Licenciamentos pagos precisam ser gerenciados e atribuídos pelo time de TI.",
+    "precisa_abertura": true,
+    "palavras_chave": ["licenca", "software", "instalacao", "ferramenta"],
+    "campos_necessarios": ["nome_software", "quantidade_licencas", "justificativa_uso"]
+  },
+  {
+    "id": "TI-009",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Teclado/Mouse com defeito para troca",
+    "pergunta": "Meu mouse parou de funcionar completamente.",
+    "resposta_padrao": "A troca de periféricos simples pode ser feita diretamente no balcão de TI das 09h às 17h.",
+    "precisa_abertura": false,
+    "palavras_chave": ["mouse", "teclado", "perifericos", "quebrado"],
+    "campos_necessarios": []
+  },
+  {
+    "id": "TI-010",
+    "categoria": "infraestrutura_ti",
+    "titulo": "Notificação de Suspeita de Phishing / Incidente de Segurança",
+    "pergunta": "Recebi um e-mail muito estranho pedindo confirmação de credenciais.",
+    "resposta_padrao": "Notificações de segurança são tratadas prioritariamente pelo time de Resposta a Incidentes.",
+    "precisa_abertura": true,
+    "palavras_chave": ["phishing", "virus", "email suspeito", "incidente"],
+    "campos_necessarios": ["remetente_email", "assunto_email", "clicou_no_link", "cabecalho_email_raw"]
+  }
+]
